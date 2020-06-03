@@ -1,2 +1,2 @@
 # PositionnementDalle
-IA permettant de connaître la position d'une dalle optimum connaissant ses voisines
+IA permettant de déterminer la position d'une dalle de façon optimum, connaissant l'emplacement de ses voisines
