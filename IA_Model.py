@@ -156,6 +156,7 @@ for i in range(len(vrai[0])):
 	Delta_ER=(entree[0][i]-vrai[0][i])
 	Delta_EP=(entree[0][i]-modelresult[0][i])
 	Delta=round(100.*(Delta_ER-Delta_EP)/Delta_ER,1)
+	CorrectDirection=False
 	if np.sign(Delta_ER)==np.sign(Delta_ER):
 		CorrectDirection=True
 	if abs(Delta)<10:
