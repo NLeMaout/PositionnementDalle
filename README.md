@@ -40,3 +40,7 @@ donc 4 * 3 = 12 données de sortie
 
 Le reseau à donc 225 entrées et 12 sorties.
 Les valeurs des coordonnées et des composantes des normales varient entre -1 et +1.
+
+
+J'ai écrit mon propre "loss" fuction à minimiser car je ne trouve pas mon bonheur dans les fonctions proposées dans tf.keras !
+Je souhaite minimiser la somme des 12 erreurs relatives sur la sortie (et non pas la moyenne). J'ai du faire une "bidouille" pour éviter la division par 0, mais c'est peut-être pas la meilleure façon de faire...
