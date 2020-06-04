@@ -43,4 +43,4 @@ Les valeurs des coordonnées et des composantes des normales varient entre -1 et
 
 
 J'ai écrit mon propre "loss" fuction à minimiser car je ne trouve pas mon bonheur dans les fonctions proposées dans tf.keras !
-Je souhaite minimiser la somme des 12 erreurs relatives sur la sortie (et non pas la moyenne). J'ai du faire une "bidouille" pour éviter la division par 0, mais c'est peut-être pas la meilleure façon de faire...
+Je souhaite minimiser la somme des 12 erreurs relatives sur la sortie (et non pas la moyenne). J'ai du faire une "bidouille" pour éviter la division par 0, mais c'est peut-être pas la meilleure façon de faire... Actuellement, mon meilleur résultat est pour le moment 220 environ sur le validate pour 32 de batch size, soit une moyenne d'environ 7 d'erreur par cas.
