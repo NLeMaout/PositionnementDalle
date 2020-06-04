@@ -176,4 +176,3 @@ for i in range(len(vrai[0])):
 		else:
 			print('\t :( :( Delta=',Delta,'% not so far from true response but in bad direction!')
 #
-print(custom_loss(Targets[index:index+1],model_output))
