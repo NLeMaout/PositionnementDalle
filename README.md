@@ -7,9 +7,9 @@ https://u.pcloud.link/publink/show?code=XZJjd6kZq8UqUl6gnDLfQRQM8bN9D0g6Dl37
 (216 Mo, zippé)
 
 Il s'agit de déterminer la position optimum d'une dalle dans l'espace 3D, en fonction des plaques voisines.
-J'ai une base de donnée conséquente sur des "bonnes" positions de dalle en fonction de ses voisines.
+J'ai une base de donnée conséquente sur des "bonnes" positions de dalle en fonction de ses voisines (positionnement de dalle réalisée par des experts au "feeling", = gros savoir-faire, et qui a très bien fonctionné sur le terrain pour tous ces cas)
 J'ai donc généré environ 1 millions de données d'entrées et des sorties pour entraîner le modèle.
-Les 1er résultat sont pas mals mais je souhaiterais améliorer la prédiction.
+Les 1er résultat sont pas mals mais je souhaiterais améliorer la prédiction...
 
 Les données d'entrées sont générés comme ceci :
 
@@ -43,4 +43,4 @@ Les valeurs des coordonnées et des composantes des normales varient entre -1 et
 
 
 J'ai écrit mon propre "loss" fuction à minimiser car je ne trouve pas mon bonheur dans les fonctions proposées dans tf.keras !
-Je souhaite minimiser la somme des 12 erreurs relatives sur la sortie (et non pas la moyenne). J'ai du faire une "bidouille" pour éviter la division par 0, mais c'est peut-être pas la meilleure façon de faire... Actuellement, mon meilleur résultat est pour le moment 220 environ sur le validate pour 32 de batch size, soit une moyenne d'environ 7 d'erreur par cas.
+Je souhaite minimiser la somme des 12 erreurs relatives sur la sortie (et non pas la moyenne). J'ai du faire une "bidouille" pour éviter la division par 0, mais c'est peut-être pas la meilleure façon de faire... Actuellement, mon meilleur résultat est pour le moment 6.4 environ sur le validate pour 32 de batch size avec 2 couches de 700 neurones.
